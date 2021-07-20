@@ -8,7 +8,7 @@ import { getStats } from "./src/getStats.js";
 
 const app = express();
 
-const PORT = 1234;
+const PORT = process.env.PORT || 1234;
 
 if (Storage && !Storage.data.links) {
   Storage.data.links = {};
@@ -28,5 +28,5 @@ app.get("/stats/:code", getStats);
 app.get("/:code", redirect);
 
 app.listen(PORT, () => {
-  console.log("listening on 1234");
+  console.log("listening on "+ PORT);
 });
