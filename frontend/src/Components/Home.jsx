@@ -2,7 +2,6 @@ import React from "react";
 import axios from "axios";
 import styled from "styled-components";
 import { AppContext } from "../Context/AppContext";
-import { DarkModeSwitch } from "./DarkModeSwitch";
 
 const HomeDiv = styled.div`
   width: 100vw;
@@ -154,7 +153,7 @@ export const Home = () => {
       setCanSubmit((prev) => !prev);
       setShortLink(null);
       axios
-        .post("http://localhost:1234/cut", {
+        .post("https://url-shortner-shortify.herokuapp.com/cut", {
           url,
         })
         .then((res) => setShortLink({ long: url, short: res.data }))

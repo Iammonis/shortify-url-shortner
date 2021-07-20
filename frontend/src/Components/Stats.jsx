@@ -16,7 +16,7 @@ export const Stats = () => {
     const { code } = useParams();
 
     React.useEffect( () => {
-        axios.get(`http://localhost:1234/stats/${code}`)
+        axios.get(`https://url-shortner-shortify.herokuapp.com/stats/${code}`)
         .then( res => setData(res.data) )
     } )
     return (
