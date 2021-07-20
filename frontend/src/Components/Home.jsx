@@ -20,12 +20,6 @@ const HomeDiv = styled.div`
     place-items: center;
   }
 
-  .top {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-  }
-
   .shortLink {
     width: 100%;
     min-height: 70px;
@@ -146,7 +140,7 @@ export const Home = () => {
   const [shortLink, setShortLink] = React.useState(null);
   const [canSubmit, setCanSubmit] = React.useState(true);
   const [error, setError] = React.useState(null);
-  const { currentTheme, toggleTheme, theme } = React.useContext(AppContext);
+  const { currentTheme, theme } = React.useContext(AppContext);
 
   const handleSubmit = () => {
     if (canSubmit && url !== "") {
@@ -178,12 +172,6 @@ export const Home = () => {
   return (
     <HomeDiv theme={theme}>
       <div className="wrapper">
-        {/* <div className="top">
-          <DarkModeSwitch
-            currentTheme={currentTheme}
-            toggleTheme={toggleTheme}
-          />
-        </div> */}
         <div className="img">
           <img
             src={
@@ -214,8 +202,8 @@ export const Home = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              href={`http://localhost:3000/${shortLink.short.code}`}
-            >{`http://localhost:3000/${shortLink.short.code}`}</a>
+              href={`https://shortify-rose.vercel.app/${shortLink.short.code}`}
+            >{`https://shortify-rose.vercel.app/${shortLink.short.code}`}</a>
           </div>
         )}
         {shortLink && (
@@ -225,8 +213,8 @@ export const Home = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href={`http://localhost:3000/stats/${shortLink.short.code}`}
-              >{`http://localhost:3000/stats/${shortLink.short.code}`}</a>
+                href={`https://shortify-rose.vercel.app/stats/${shortLink.short.code}`}
+              >{`https://shortify-rose.vercel.app/stats/${shortLink.short.code}`}</a>
             </p>
           </div>
         )}

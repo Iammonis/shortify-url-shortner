@@ -9,5 +9,5 @@ export const redirect = (req, res) => {
     Storage.write();
     res.redirect(Storage.data.links[code].url);
   }
-  else res.redirect('http://localhost:3000/404');
+  else res.redirect('https://shortify-iammonis.vercel.app/404');
 };

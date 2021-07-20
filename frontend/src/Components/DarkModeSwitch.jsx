@@ -173,7 +173,7 @@ export const DarkModeSwitch = () => {
         type="checkbox"
         id="toggle"
         className="toggleCheckbox"
-        onClick={toggleTheme}
+        onChange={toggleTheme}
         checked={currentTheme === "light"}
       />
       <label htmlFor="toggle" className="toggleLabel">

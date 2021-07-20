@@ -11,7 +11,7 @@ const StatsDiv = styled.div`
 `;
 
 export const Stats = () => {
-    const { currentTheme, toggleTheme, theme } = React.useContext(AppContext)
+    const {  theme } = React.useContext(AppContext)
     const [data, setData] = React.useState(null);
     const { code } = useParams();
 
