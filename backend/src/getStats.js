@@ -41,5 +41,5 @@ export const getStats = (req, res) => {
 
     res.status(200).send({userData: obj, linkData: Storage.data.links[code]} );
   }
-  else res.redirect('https://shortify-iammonis.vercel.app/404');
+  else res.status(400).send(null);
 }

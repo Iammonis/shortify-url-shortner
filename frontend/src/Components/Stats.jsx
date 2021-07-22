@@ -93,7 +93,8 @@ export const Stats = () => {
     !data &&
       axios
         .get(`https://url-shortner-shortify.herokuapp.com/stats/${code}`)
-        .then((res) => setData(res.data));
+        .then((res) => setData(res.data))
+        .catch( err => window.location.assign('https://shortify-iammonis.vercel.app/404') )
   });
 
   const getValues = (data, label) => {
