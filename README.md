@@ -7,4 +7,4 @@ Shortify is a URL shortner app built with React, NodeJS and Express.
 
 Shortify's frontend is hosted on Vercel and Backend is hosted on Heroku. 
 
-You can visit Shortify at [link text itself]: https://shortify-rose.vercel.app/
+You can visit Shortify at https://shortify-rose.vercel.app/
