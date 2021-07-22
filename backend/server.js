@@ -19,7 +19,7 @@ app.use(cors());
 
 app.use(express.json());
 
-app.use(useragent.express())
+app.use(useragent.express());
 
 app.post("/cut", cutURL);
 

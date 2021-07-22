@@ -5,7 +5,7 @@ import { AppContext } from "../Context/AppContext";
 
 const HomeDiv = styled.div`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: ${(props) => props.theme.bodyBackground};
   display: flex;
   flex-direction: column;

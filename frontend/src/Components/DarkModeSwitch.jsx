@@ -11,6 +11,8 @@ const Toggle = styled.div`
   right: 5px;
   grid-area: toggle;
   margin: 20px;
+  z-index: 100;
+
 
   @keyframes reverse {
     0% {
@@ -54,6 +56,7 @@ const Toggle = styled.div`
     display: flex;
     position: relative;
     transition: all 350ms ease-in;
+    cursor: pointer;
   }
 
   .toggleCheckbox:checked + .toggleLabel {
