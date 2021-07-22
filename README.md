@@ -1,4 +1,4 @@
-#Shortify
+# Shortify
 
 Shortify is URL shortner built with React, NodeJS and Express.
 1. It can shorten any link which then can be redirected to the original link.
